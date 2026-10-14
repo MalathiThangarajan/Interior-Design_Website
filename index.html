@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Dream Catcher Interior Designs — elegant residential, modular kitchen and commercial interiors in Coimbatore, Tamil Nadu.">
+<title>Dream Catcher Interior Designs | Coimbatore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2a24;--brown:#9a6b3d;--brown-dark:#74502f;--cream:#fbfaf5;
+  --muted:#5b6b5f;--line:#d9e2d4;--gold:#c7a56b;--deep:#1e2b23;
+  --radius-md:16px;--radius-sm:10px;
+  --shadow-sm:0 8px 24px rgba(28,42,34,0.06);
+  --shadow-md:0 18px 40px -8px rgba(24,38,30,0.12);
+  --transition:all 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  --font-serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{
+  font-family:var(--font-sans);color:var(--ink);
+  background:linear-gradient(145deg,#fbfaf5 0%,#f4f7f0 50%,#fbfaf5 100%);
+  line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20 20 Q40 5 60 20 T100 20" stroke="%23d9e2d4" stroke-width="0.3" fill="none" opacity="0.3"/><path d="M0 60 Q30 40 60 60 T120 60" stroke="%23d9e2d4" stroke-width="0.3" fill="none" opacity="0.2"/></svg>');
+  background-repeat:repeat;opacity:0.4;z-index:-1;
+}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.container{width:min(1380px,92%);margin:auto}
+
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,250,245,0.92);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(200,212,195,0.5);
+  box-shadow:0 6px 28px rgba(35,50,40,0.03);
+}
+.nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;cursor:pointer}
+.monogram{
+  font-family:var(--font-serif);font-size:2.8rem;line-height:0.9;
+  letter-spacing:-0.12em;border-right:1.5px solid var(--gold);
+  padding-right:16px;color:#281e13;font-weight:500;
+}
+.brand-title{font-family:var(--font-serif);font-size:1.6rem;letter-spacing:0.02em;line-height:1.05;font-weight:500}
+.brand-sub{font-size:0.62rem;letter-spacing:0.3em;margin-top:5px;color:var(--brown);font-weight:700}
+.tagline{font-family:var(--font-serif);font-style:italic;font-size:0.8rem;color:var(--muted);margin-top:3px}
+.navlinks{display:flex;align-items:center;gap:clamp(14px,2.5vw,38px)}
+.navlinks a{font-size:0.94rem;font-weight:500;position:relative;padding:8px 0;transition:color 0.2s;cursor:pointer}
+.navlinks a:not(.nav-cta):after{
+  content:"";position:absolute;left:0;bottom:2px;width:0;height:2px;
+  background:var(--brown);transition:width 0.3s var(--transition);
+}
+.navlinks a:hover:after,.navlinks a.active:after{width:100%}
+.navlinks .nav-cta{
+  background:linear-gradient(135deg,#a87949,#80562f);color:white;
+  padding:12px 20px;border-radius:40px;
+  box-shadow:0 6px 16px rgba(128,86,47,0.25);
+  font-weight:600;transition:var(--transition);
+}
+.navlinks .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(128,86,47,0.3)}
+.menu-toggle{
+  display:none;border:1px solid var(--line);background:transparent;
+  padding:10px 14px;border-radius:40px;cursor:pointer;font-weight:500;transition:var(--transition);
+}
+.menu-toggle:hover{background:#e9efe6}
+
+.hero{
+  display:grid;grid-template-columns:0.8fr 1.2fr;min-height:520px;
+  background:linear-gradient(125deg,#f5f3ea 0%,#e9f0e5 55%,#f7ede0 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero-copy{
+  padding:clamp(35px,5vw,70px) 30px clamp(35px,5vw,65px) max(4vw,calc((100vw - 1380px)/2));
+  display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;
+}
+.hero-copy::before{
+  content:"";position:absolute;left:-60px;bottom:-70px;
+  width:200px;height:260px;border:1.5px solid rgba(160,180,150,0.4);
+  border-radius:100% 0;transform:rotate(-35deg);pointer-events:none;
+}
+.hero-copy::after{
+  content:"";position:absolute;width:200px;height:200px;border-radius:50%;
+  right:-100px;top:-100px;background:rgba(215,228,208,0.5);pointer-events:none;
+}
+.eyebrow{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.28em;color:#8b6137;font-weight:700;margin-bottom:18px}
+.hero h1{
+  font-family:var(--font-serif);font-size:clamp(2.8rem,5.2vw,5.2rem);
+  font-weight:500;letter-spacing:-0.03em;line-height:1.02;
+  max-width:620px;margin-bottom:20px;color:#1c2820;
+}
+.hero h1 em{font-weight:400;color:#6e4f2e}
+.hero-copy > p{font-size:1.06rem;max-width:480px;color:#4f5b51;margin-bottom:28px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  background:linear-gradient(135deg,#a87949,#80562f);border:none;color:white;
+  padding:14px 26px;min-height:52px;font-size:0.82rem;font-weight:600;
+  letter-spacing:0.08em;border-radius:40px;cursor:pointer;
+  transition:var(--transition);box-shadow:0 8px 18px rgba(128,86,47,0.18);text-transform:uppercase;
+}
+.btn:hover{background:linear-gradient(135deg,#93663b,#6b421f);transform:translateY(-3px);box-shadow:0 14px 24px rgba(128,86,47,0.22)}
+.btn.secondary{
+  background:rgba(255,255,255,0.75);color:var(--ink);
+  border:1px solid #bac8b6;box-shadow:0 4px 12px rgba(0,0,0,0.02);backdrop-filter:blur(4px);
+}
+.btn.secondary:hover{background:white;border-color:#9aaf93;transform:translateY(-3px);box-shadow:0 10px 20px rgba(35,55,40,0.08)}
+.hero-photo{
+  min-height:520px;position:relative;
+  background:linear-gradient(0deg,rgba(30,20,10,0.08),rgba(30,20,10,0) 40%),
+             url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=90') center/cover;
+  border-left:1px solid rgba(210,220,200,0.5);
+}
+.hero-photo::after{
+  content:"";position:absolute;inset:18px;
+  border:1.5px solid rgba(255,250,240,0.6);border-radius:4px;pointer-events:none;
+}
+
+.trustbar{
+  background:linear-gradient(90deg,#ecf2e8,#faf4e9,#ecf2e8);
+  border-top:1px solid rgba(200,215,190,0.6);
+  border-bottom:1px solid rgba(200,215,190,0.6);
+}
+.trust-inner{
+  display:flex;justify-content:center;align-items:center;
+  gap:clamp(18px,5vw,80px);padding:16px 12px;flex-wrap:wrap;
+  font-size:0.88rem;font-weight:500;color:#2b3b30;
+}
+.trust-inner span{display:flex;align-items:center;gap:10px}
+.trust-inner b{color:var(--brown);font-size:1.3rem;line-height:1}
+.divider{height:24px;width:1px;background:#c2b9a8}
+
+section.section{padding:80px 0}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title .eyebrow{margin-bottom:8px}
+.section-title h2,.split-copy h2,.contact-copy h2{
+  font-family:var(--font-serif);font-weight:500;line-height:1.15;
+  font-size:clamp(2.1rem,3.8vw,3.4rem);letter-spacing:-0.02em;
+}
+.section-title h2::after{
+  content:"";display:block;width:70px;height:2px;
+  background:linear-gradient(90deg,#b89b72,#d9c9aa);margin:18px auto 0;
+}
+
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{
+  display:grid;grid-template-columns:1.1fr 0.9fr;min-height:240px;
+  border:1px solid rgba(210,222,205,0.7);border-radius:var(--radius-md);
+  padding:10px;gap:18px;background:linear-gradient(145deg,#fffefa,#f3f8f0);
+  transition:var(--transition);box-shadow:var(--shadow-sm);
+}
+.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);border-color:#b8ccb2}
+.service-card img{
+  width:100%;height:100%;min-height:200px;object-fit:cover;
+  border-radius:var(--radius-sm);transition:var(--transition);
+  background:#e8ede4;
+}
+.service-card:hover img{transform:scale(1.02)}
+.service-info{padding:10px 8px 10px 0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.service-icon{font-size:1.8rem;color:var(--brown);margin-bottom:8px;line-height:1}
+.service-info h3{font-family:var(--font-serif);font-size:1.5rem;line-height:1.1;font-weight:500;margin-bottom:8px}
+.service-info p{font-size:0.84rem;color:var(--muted);line-height:1.5;margin-bottom:16px}
+.text-link{
+  font-size:0.78rem;color:var(--brown-dark);font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;display:inline-flex;
+  align-items:center;gap:4px;transition:gap 0.2s;cursor:pointer;
+}
+.text-link span{transition:transform 0.2s}
+.text-link:hover span{transform:translateX(6px)}
+
+.cta-strip{
+  margin:0 auto 70px;width:min(1450px,94%);
+  border:1px solid rgba(200,215,190,0.9);border-radius:80px;
+  background:linear-gradient(110deg,#e9f0e5,#faf3e8,#e9f0e5);
+  display:flex;align-items:center;justify-content:space-around;gap:18px;
+  padding:18px 38px;box-shadow:0 12px 28px -8px rgba(30,45,35,0.08);flex-wrap:wrap;
+}
+.cta-strip h2{font-family:var(--font-serif);font-style:italic;font-size:clamp(1.4rem,2.3vw,2rem);font-weight:500}
+.cta-strip p{font-size:0.87rem;color:var(--muted)}
+.cta-spark{font-size:2rem;color:var(--brown)}
+
+.portfolio{background:linear-gradient(135deg,#edf3e9 0%,#f7f2e9 52%,#eaf0e6 100%);border-top:1px solid #dfe8da;border-bottom:1px solid #dfe8da}
+.portfolio-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px}
+.project{
+  position:relative;min-height:300px;overflow:hidden;
+  border-radius:var(--radius-md);background:#ded4c7;
+  box-shadow:var(--shadow-sm);transition:var(--transition);
+}
+.project:hover{box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.project img{
+  width:100%;height:100%;position:absolute;inset:0;object-fit:cover;
+  transition:transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.project:hover img{transform:scale(1.06)}
+.project::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(20,16,10,0.8))}
+.project-caption{position:absolute;z-index:2;bottom:24px;left:24px;color:white}
+.project-caption h3{font-family:var(--font-serif);font-size:1.6rem;font-weight:500;text-shadow:0 2px 10px rgba(0,0,0,0.2)}
+.project-caption p{font-size:0.82rem;color:rgba(255,250,240,0.9);letter-spacing:0.04em}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-photo{
+  height:460px;
+  background:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85') center/cover;
+  border-radius:var(--radius-md);box-shadow:20px 20px 0 #e0e9d8;transition:var(--transition);
+}
+.about-photo:hover{box-shadow:24px 24px 0 #d4e0cb;transform:scale(1.01)}
+.split-copy p{color:var(--muted);margin:20px 0;font-size:1.02rem}
+.checklist{list-style:none;margin:24px 0 30px}
+.checklist li{margin:12px 0;display:flex;align-items:center;gap:12px;font-weight:500;color:#2f3e33}
+.checklist li::before{
+  content:"✓";color:var(--brown);font-weight:700;font-size:1.1rem;
+  background:#e5ede0;width:26px;height:26px;display:inline-flex;
+  align-items:center;justify-content:center;border-radius:50%;flex-shrink:0;
+}
+
+.contact{
+  background:radial-gradient(ellipse at top left,#3d5346 0%,#263b32 50%,#1c2a22 100%);
+  color:var(--cream);position:relative;overflow:hidden;
+}
+.contact::before{
+  content:"";position:absolute;width:480px;height:480px;
+  border:1px solid rgba(215,194,155,0.15);border-radius:50%;
+  right:-180px;top:-180px;pointer-events:none;
+}
+.contact .container{position:relative;z-index:2}
+.contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:60px;align-items:start}
+.contact-copy .eyebrow{color:#ddbc97}
+.contact-copy p{color:#cfd9ce;margin:20px 0}
+.contact-detail{margin-top:28px;display:grid;gap:16px;color:#f2eadf}
+.contact-detail a,.contact-detail span{display:flex;align-items:center;gap:12px;font-size:0.98rem;transition:color 0.2s}
+.contact-detail a:hover{color:#ffd8a8}
+.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form .full{grid-column:1 / -1}
+.contact-form input,.contact-form select,.contact-form textarea{
+  width:100%;padding:16px 18px;border:1px solid rgba(255,255,255,0.18);
+  background:rgba(255,255,255,0.06);color:white;border-radius:var(--radius-sm);
+  outline:none;transition:var(--transition);backdrop-filter:blur(4px);font-size:0.95rem;
+}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{
+  border-color:#d8bd91;background:rgba(255,255,255,0.1);box-shadow:0 0 0 4px rgba(213,174,130,0.15);
+}
+.contact-form select option{background:#2e3d34;color:white}
+.contact-form textarea{min-height:120px;resize:vertical}
+.contact-form ::placeholder{color:#c9bfb0}
+.contact-form .btn{justify-self:start;background:linear-gradient(135deg,#b9854c,#8f6133);border:none;box-shadow:0 8px 20px rgba(0,0,0,0.2);width:100%;text-align:center}
+.contact-form .btn:hover{background:linear-gradient(135deg,#a76f35,#7a4f26)}
+.form-note{font-size:0.82rem;color:#ddcfbe;text-align:center;margin-top:6px}
+
+footer{padding:32px 0;background:#18231d;color:#cfd6cb;font-size:0.86rem;border-top:1px solid rgba(255,255,255,0.06)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-brand{font-family:var(--font-serif);letter-spacing:0.08em;color:white;font-size:1.05rem}
+.instagram-link{display:inline-flex;align-items:center;gap:8px;color:inherit;font-weight:500;transition:var(--transition);cursor:pointer}
+.instagram-link:hover{color:#ffd8a8;transform:translateY(-1px)}
+.instagram-icon{width:22px;height:22px;display:inline-block;flex-shrink:0}
+
+.whatsapp{
+  position:fixed;right:28px;bottom:28px;z-index:50;
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(145deg,#2ce47a,#12a957);color:white;font-size:2rem;
+  box-shadow:0 12px 28px rgba(10,160,75,0.45);border:3px solid rgba(255,255,255,0.85);
+  transition:var(--transition);
+}
+.whatsapp:hover{transform:scale(1.12) translateY(-2px);box-shadow:0 16px 36px rgba(10,160,75,0.55)}
+
+.service-page{display:none;animation:fadeIn 0.4s ease}
+.service-page.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.service-hero{
+  background:linear-gradient(135deg,#2b3d31 0%,#1e2b23 100%);
+  color:var(--cream);padding:70px 0 60px;text-align:center;position:relative;overflow:hidden;
+}
+.service-hero::before{
+  content:"";position:absolute;width:600px;height:600px;
+  border:1px solid rgba(199,165,107,0.1);border-radius:50%;
+  right:-200px;top:-200px;
+}
+.service-hero h1{
+  font-family:var(--font-serif);font-size:clamp(2.5rem,5vw,4rem);
+  font-weight:500;margin-bottom:16px;position:relative;
+}
+.service-hero p{font-size:1.05rem;color:#c8d4c8;max-width:600px;margin:0 auto;position:relative}
+.back-link{
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:24px;
+  font-size:0.85rem;color:#d4c5a8;transition:color 0.2s;position:relative;cursor:pointer;
+}
+.back-link:hover{color:#ffd8a8}
+
+.category-tabs{
+  display:flex;justify-content:center;gap:12px;flex-wrap:wrap;
+  margin:50px 0 40px;
+}
+.cat-tab{
+  padding:12px 28px;border-radius:40px;border:1px solid #d9e2d4;
+  background:#fffefa;cursor:pointer;font-size:0.85rem;font-weight:600;
+  color:var(--muted);transition:var(--transition);
+}
+.cat-tab:hover{border-color:#b8ccb2;color:var(--ink);transform:translateY(-2px)}
+.cat-tab.active{
+  background:linear-gradient(135deg,#a87949,#80562f);color:white;
+  border-color:transparent;box-shadow:0 8px 18px rgba(128,86,47,0.2);
+}
+
+.project-detail-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+  gap:30px;padding:0 0 60px;
+}
+.detail-card{
+  background:#fffefa;border-radius:var(--radius-md);overflow:hidden;
+  box-shadow:var(--shadow-sm);transition:var(--transition);
+  border:1px solid #e6ede3;
+  animation:fadeIn 0.4s ease;
+}
+.detail-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.detail-card-img{
+  height:260px;background-size:cover;background-position:center;position:relative;
+  background-color:#e8ede4;
+  background-repeat:no-repeat;
+}
+.detail-card-img::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(transparent 60%,rgba(0,0,0,0.25));
+}
+.detail-card-body{padding:24px}
+.detail-card-body h3{
+  font-family:var(--font-serif);font-size:1.6rem;font-weight:500;
+  margin-bottom:8px;letter-spacing:-0.02em;
+}
+.detail-location{
+  font-size:0.82rem;color:var(--brown);text-transform:uppercase;
+  letter-spacing:0.1em;font-weight:600;margin-bottom:14px;
+}
+.detail-desc{font-size:0.9rem;color:var(--muted);margin-bottom:18px;line-height:1.6}
+.materials-label{
+  font-size:0.72rem;text-transform:uppercase;letter-spacing:0.15em;
+  font-weight:700;color:var(--brown);margin-bottom:10px;
+}
+.materials-list{display:flex;flex-wrap:wrap;gap:8px}
+.material-tag{
+  background:#eef4ea;padding:6px 14px;border-radius:40px;
+  font-size:0.78rem;color:#3d5346;font-weight:500;border:1px solid #d9e5d4;
+}
+
+.kitchen-img-1{background-image:url('./components/kitchen/img1.jpeg'),url('https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=85')}
+.kitchen-img-2{background-image:url('./components/kitchen/img2.jpeg'),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85')}
+.kitchen-img-3{background-image:url('./components/kitchen/img3.jpeg'),url('https://images.unsplash.com/photo-1565183997392-2f6f122e5912?auto=format&fit=crop&w=800&q=85')}
+.kitchen-img-4{background-image:url('./components/kitchen/img4.jpeg'),url('https://images.unsplash.com/photo-1571843439991-dd2b8e051966?auto=format&fit=crop&w=800&q=85')}
+.kitchen-img-5{background-image:url('./components/kitchen/img5.jpeg'),url('https://images.unsplash.com/photo-1595515106864-077d30192c56?auto=format&fit=crop&w=800&q=85')}
+.kitchen-img-6{background-image:url('./components/kitchen/img6.jpeg'),url('https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?auto=format&fit=crop&w=800&q=85')}
+.kitchen-img-7{background-image:url('./components/kitchen/img7.jpeg'),url('https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=800&q=85')}
+
+.reviews-section{padding:60px 0 80px;background:linear-gradient(180deg,#f7f9f4,#eef3ea)}
+.reviews-header{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  margin-bottom:36px;flex-wrap:wrap;gap:20px;
+}
+.reviews-header .section-title{text-align:left;margin-bottom:0}
+.reviews-header .section-title h2::after{margin:18px 0 0;background:linear-gradient(90deg,#b89b72,#d9c9aa)}
+.avg-rating-display{
+  display:flex;align-items:center;gap:16px;
+  background:#fffefa;border:1px solid #e0e8db;border-radius:16px;
+  padding:16px 24px;box-shadow:var(--shadow-sm);
+}
+.avg-number{
+  font-family:var(--font-serif);font-size:2.6rem;font-weight:600;
+  color:var(--brown-dark);line-height:1;
+}
+.avg-stars{color:#f5b342;font-size:1.15rem;letter-spacing:2px}
+.avg-count{font-size:0.8rem;color:var(--muted)}
+
+.reviews-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:24px;margin-bottom:40px;
+}
+.review-card{
+  background:#fffefa;border-radius:var(--radius-md);padding:28px;
+  border:1px solid #e6ede3;box-shadow:var(--shadow-sm);
+  transition:var(--transition);animation:fadeIn 0.4s ease;
+}
+.review-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.review-stars{color:#f5b342;font-size:1.15rem;letter-spacing:2px;margin-bottom:14px}
+.review-text{
+  font-size:0.95rem;color:#3d4a40;line-height:1.7;
+  margin-bottom:18px;font-style:italic;
+}
+.review-author{display:flex;align-items:center;gap:12px}
+.review-avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,#b89b72,#9a6b3d);
+  display:grid;place-items:center;color:white;font-weight:700;
+  font-size:1.1rem;flex-shrink:0;
+}
+.review-name{font-weight:600;font-size:0.92rem;color:var(--ink)}
+.review-project{font-size:0.78rem;color:var(--muted)}
+.review-date{font-size:0.75rem;color:#9aaa9c;margin-top:2px}
+
+.write-review{
+  background:#fffefa;border-radius:var(--radius-md);
+  padding:36px;border:1px solid #e0e8db;
+  box-shadow:var(--shadow-sm);max-width:720px;margin:0 auto;
+}
+.write-review h3{
+  font-family:var(--font-serif);font-size:1.7rem;font-weight:500;
+  margin-bottom:8px;text-align:center;
+}
+.write-review .sub{
+  text-align:center;color:var(--muted);font-size:0.9rem;
+  margin-bottom:28px;
+}
+.review-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.review-form .full{grid-column:1 / -1}
+.review-form input,.review-form select,.review-form textarea{
+  width:100%;padding:14px 16px;border:1px solid #d9e2d4;
+  background:#fbfdf9;color:var(--ink);border-radius:var(--radius-sm);
+  outline:none;transition:var(--transition);font-size:0.95rem;
+}
+.review-form input:focus,.review-form select:focus,.review-form textarea:focus{
+  border-color:#b89b72;background:#fff;box-shadow:0 0 0 4px rgba(184,155,114,0.12);
+}
+.review-form textarea{min-height:110px;resize:vertical}
+.review-form .btn{width:100%}
+
+.star-picker{
+  display:flex;gap:6px;align-items:center;
+  padding:12px 16px;background:#fbfdf9;border:1px solid #d9e2d4;
+  border-radius:var(--radius-sm);
+}
+.star-picker .star{
+  font-size:1.8rem;cursor:pointer;color:#d9dfd4;
+  transition:transform 0.15s,color 0.15s;line-height:1;
+}
+.star-picker .star:hover{transform:scale(1.15)}
+.star-picker .star.active{color:#f5b342}
+.star-picker-label{
+  font-size:0.85rem;color:var(--muted);margin-left:12px;
+  font-weight:500;
+}
+
+.review-success{
+  background:#e4f3e4;border:1px solid #b8d9b8;color:#2d5a2d;
+  padding:14px 18px;border-radius:var(--radius-sm);
+  font-size:0.9rem;text-align:center;margin-top:16px;
+  display:none;animation:fadeIn 0.3s ease;
+}
+.review-success.show{display:block}
+
+.no-reviews{
+  grid-column:1 / -1;text-align:center;padding:50px 20px;
+  color:var(--muted);font-style:italic;
+  background:#fffefa;border-radius:var(--radius-md);
+  border:1px dashed #d9e2d4;
+}
+
+@media (max-width:1000px){
+  .hero{grid-template-columns:0.9fr 1.1fr}
+  .service-grid{grid-template-columns:1fr 1fr}
+  .service-card:last-child{grid-column:1 / -1}
+  .portfolio-grid{grid-template-columns:1fr 1fr}
+  .project:first-child{grid-row:span 2}
+  .project:first-child,.project:first-child img{min-height:620px}
+}
+@media (max-width:680px){
+  .nav{min-height:76px}
+  .monogram{font-size:2.2rem;padding-right:10px}
+  .brand-title{font-size:1.1rem}
+  .brand-sub{font-size:0.5rem;letter-spacing:0.18em}
+  .tagline{font-size:0.7rem}
+  .menu-toggle{display:block}
+  .navlinks{
+    display:none;position:absolute;top:76px;left:0;right:0;
+    background:var(--cream);padding:20px 5%;border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;gap:8px;
+    box-shadow:0 20px 30px -10px rgba(0,0,0,0.1);
+  }
+  .navlinks.open{display:flex}
+  .navlinks a{padding:12px 8px;border-radius:8px}
+  .navlinks a:not(.nav-cta):after{display:none}
+  .hero{grid-template-columns:1fr}
+  .hero-copy{padding:48px 5% 40px}
+  .hero h1{font-size:clamp(3rem,13vw,4.5rem)}
+  .hero-photo{min-height:320px}
+  .trust-inner{gap:14px;font-size:0.78rem}
+  .divider{display:none}
+  section.section{padding:55px 0}
+  .service-grid{grid-template-columns:1fr}
+  .service-card:last-child{grid-column:auto}
+  .service-card{min-height:200px}
+  .service-card img{min-height:190px}
+  .cta-strip{border-radius:28px;flex-direction:column;text-align:center;padding:28px 22px;margin-bottom:55px}
+  .cta-strip .btn{width:100%}
+  .portfolio-grid{grid-template-columns:1fr}
+  .project:first-child{grid-row:auto}
+  .project:first-child,.project:first-child img{min-height:320px}
+  .project{min-height:280px}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}
+  .about-photo{height:320px;box-shadow:12px 12px 0 #e0e9d8}
+  .contact-form{grid-template-columns:1fr}
+  .contact-form .full{grid-column:auto}
+  .whatsapp{width:58px;height:58px;right:18px;bottom:18px;font-size:1.8rem}
+  .footer-inner{justify-content:center;text-align:center}
+  .review-form{grid-template-columns:1fr}
+  .review-form .full{grid-column:auto}
+  .reviews-header{flex-direction:column;align-items:center;text-align:center}
+  .reviews-header .section-title{text-align:center}
+  .reviews-header .section-title h2::after{margin:18px auto 0}
+  .write-review{padding:24px}
+  .project-detail-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+::selection{background:#c9d9c4;color:#1e3327}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" onclick="showMainPage();return false;">
+      <span class="monogram">D<span style="font-size:.7em">C</span></span>
+      <span>
+        <span class="brand-title">DREAM CATCHER</span>
+        <span class="brand-sub" style="display:block">INTERIOR DESIGNS</span>
+        <span class="tagline" style="display:block">Spaces that feel like home</span>
+      </span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false">☰ Menu</button>
+    <nav class="navlinks" id="navLinks">
+      <a class="active" onclick="showMainPage();return false;">Home</a>
+      <a onclick="showMainPage();return false;">About</a>
+      <a onclick="showMainPage();return false;">Services</a>
+      <a onclick="showMainPage();return false;">Portfolio</a>
+      <a onclick="showMainPage();return false;">Contact</a>
+      <a class="instagram-link" href="https://www.instagram.com/dreamcatcherinteriors" target="_blank" rel="noopener noreferrer">
+        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a class="nav-cta" onclick="showMainPage();return false;">Free quote ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div id="mainPage">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">Interior design studio ─────</div>
+        <h1>Spaces That Feel <em>Like Home</em></h1>
+        <p>Thoughtfully designed interiors. Beautifully executed.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">GET A FREE QUOTE <span>→</span></a>
+          <a class="btn secondary" href="tel:+916369018939">☎ &nbsp; CALL NOW</a>
+        </div>
+      </div>
+      <div class="hero-photo"></div>
+    </section>
+
+    <div class="trustbar">
+      <div class="container trust-inner">
+        <span><b>⌖</b> Coimbatore, Tamil Nadu</span>
+        <i class="divider"></i>
+        <span><b>✦</b> Design</span><span>•</span><span>Execution</span><span>•</span><span>Turnkey Interiors</span>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-title"><div class="eyebrow">What we create</div><h2>Our Services</h2></div>
+        <div class="service-grid">
+          <article class="service-card">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=85" alt="Residential living room">
+            <div class="service-info">
+              <div class="service-icon">⌂</div>
+              <h3>Residential Interiors</h3>
+              <p>Beautiful, functional and personalised spaces for your dream home.</p>
+              <a class="text-link" onclick="showServicePage('residential');return false;">EXPLORE <span>→</span></a>
+            </div>
+          </article>
+          <article class="service-card">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=85" alt="Modular kitchen">
+            <div class="service-info">
+              <div class="service-icon">▤</div>
+              <h3>Modular Kitchens</h3>
+              <p>Smart designs for modern living with maximum utility.</p>
+              <a class="text-link" onclick="showServicePage('kitchen');return false;">EXPLORE <span>→</span></a>
+            </div>
+          </article>
+          <article class="service-card">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=85" alt="Commercial office interior">
+            <div class="service-info">
+              <div class="service-icon">▦</div>
+              <h3>Commercial Interiors</h3>
+              <p>Stylish and functional workspaces for modern businesses.</p>
+              <a class="text-link" onclick="showServicePage('commercial');return false;">EXPLORE <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-strip">
+      <span class="cta-spark">✧</span>
+      <h2>Let's bring your vision to life!</h2>
+      <p>Get expert advice and a customised design plan for your space.</p>
+      <a class="btn" href="#contact">GET A FREE QUOTE <span>→</span></a>
+      <a class="btn secondary" href="https://www.instagram.com/dreamcatcherinteriors" target="_blank" rel="noopener noreferrer">
+        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Follow Us on Instagram
+      </a>
+    </div>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-title"><div class="eyebrow">Selected spaces</div><h2>Our Portfolio</h2></div>
+        <div class="portfolio-grid">
+          <article class="project">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85" alt="Neutral luxury living room">
+            <div class="project-caption"><h3>Warm Minimal Living</h3><p>Residential · Coimbatore</p></div>
+          </article>
+          <article class="project">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Modern dining interior">
+            <div class="project-caption"><h3>Everyday Elegance</h3><p>Dining & living</p></div>
+          </article>
+          <article class="project">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Modern architectural interior">
+            <div class="project-caption"><h3>Natural Harmony</h3><p>Full-home interiors</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo"></div>
+        <div class="split-copy">
+          <div class="eyebrow">A little about us</div>
+          <h2>Designed around your life. Finished with care.</h2>
+          <p>At Dream Catcher Interior Designs, we believe a well-designed space should feel beautiful, work effortlessly and reflect the people who use it.</p>
+          <p>From concept and material selection to execution and finishing, our aim is to make your interior journey smooth, personal and thoughtfully planned.</p>
+          <ul class="checklist">
+            <li>Designs tailored to your taste and needs</li>
+            <li>Practical planning with considered details</li>
+            <li>Design, execution and turnkey solutions</li>
+          </ul>
+          <a class="btn" href="#contact">LET'S DISCUSS YOUR SPACE →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="eyebrow">Your dream space starts here</div>
+          <h2>Let's create a home you'll love coming back to.</h2>
+          <p>Tell us a little about your project. We'll help you take the next step toward a space that feels truly yours.</p>
+          <div class="contact-detail">
+            <a href="tel:+916369018939">☎ &nbsp; +91 63690 18939</a>
+            <a href="mailto:sandyshain80@gmail.com">✉ &nbsp; sandyshain80@gmail.com</a>
+            <a class="instagram-link" href="https://www.instagram.com/dreamcatcherinteriors" target="_blank" rel="noopener noreferrer">
+              <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Follow Us on Instagram
+            </a>
+            <span>⌖ &nbsp; Coimbatore, Tamil Nadu</span>
+          </div>
+        </div>
+        <form class="contact-form" id="enquiryForm">
+          <input name="name" placeholder="Your name *" required>
+          <input name="phone" type="tel" placeholder="Phone number *" required>
+          <input name="location" placeholder="Project location / city *" required>
+          <select name="budget" required>
+            <option value="">Select approximate budget *</option>
+            <option>Below ₹2 lakh</option>
+            <option>₹2–5 lakh</option>
+            <option>₹5–10 lakh</option>
+            <option>₹10–20 lakh</option>
+            <option>₹20 lakh and above</option>
+            <option>Need guidance</option>
+          </select>
+          <input class="full" name="email" type="email" placeholder="Email address (optional)">
+          <select class="full" name="project" id="projectType" required>
+            <option value="">Select a service *</option>
+            <option>Residential Interiors</option>
+            <option>Modular Kitchens</option>
+            <option>Commercial Interiors</option>
+            <option>Full Home / Turnkey Interiors</option>
+            <option>Renovation</option>
+            <option>Other</option>
+          </select>
+          <textarea class="full" name="message" placeholder="Project requirements, preferred style, room sizes, timeline…"></textarea>
+          <button class="btn full" type="submit">SEND ENQUIRY VIA WHATSAPP ↗</button>
+          <p class="form-note full" id="formMessage" aria-live="polite">Your details will be prepared in WhatsApp so you can review and send your enquiry.</p>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <div id="servicePage" class="service-page">
+    <section class="service-hero">
+      <div class="container">
+        <a class="back-link" onclick="showMainPage();return false;">← Back to Home</a>
+        <h1 id="servicePageTitle">Our Work</h1>
+        <p id="servicePageDesc">Explore our completed projects with material details and client reviews.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="category-tabs" id="categoryTabs">
+        <button class="cat-tab active" onclick="filterProjects('all',this)">All Projects</button>
+        <button class="cat-tab" onclick="filterProjects('living',this)">🛋 Living Room</button>
+        <button class="cat-tab" onclick="filterProjects('kitchen',this)">🍳 Kitchen</button>
+        <button class="cat-tab" onclick="filterProjects('bedroom',this)">🛏 Bedroom</button>
+        <button class="cat-tab" onclick="filterProjects('office',this)">💼 Office</button>
+      </div>
+
+      <div class="project-detail-grid" id="projectDetailGrid">
+
+        <!-- 5 LIVING ROOM -->
+        <article class="detail-card" data-category="living">
+          <div class="detail-card-img" style="background-image:url('./components/livingroom/img1.jpeg'),url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Warm Minimal Living</h3>
+            <p class="detail-location">Living Room · Coimbatore</p>
+            <p class="detail-desc">A serene 3BHK living room designed with a neutral palette, natural textures and abundant light.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Teak Wood</span>
+              <span class="material-tag">Italian Marble</span>
+              <span class="material-tag">Linen Fabric</span>
+              <span class="material-tag">Brass Accents</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="living">
+          <div class="detail-card-img" style="background-image:url('./components/livingroom/img2.jpeg'),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Everyday Elegance — Dining</h3>
+            <p class="detail-location">Living / Dining · Coimbatore</p>
+            <p class="detail-desc">An open dining area with a custom 8-seater table and statement pendant lights.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Solid Sheesham</span>
+              <span class="material-tag">Textured Paint</span>
+              <span class="material-tag">Brass Pendants</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="living">
+          <div class="detail-card-img" style="background-image:url('./components/livingroom/img3.jpeg'),url('https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Contemporary Lounge</h3>
+            <p class="detail-location">Living Room · Coimbatore</p>
+            <p class="detail-desc">A modern lounge featuring a low-profile sectional and layered lighting.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Velvet Upholstery</span>
+              <span class="material-tag">Walnut Veneer</span>
+              <span class="material-tag">Warm LED</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="living">
+          <div class="detail-card-img" style="background-image:url('./components/livingroom/img4.jpeg'),url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Scandinavian Living Space</h3>
+            <p class="detail-location">Living Room · Coimbatore</p>
+            <p class="detail-desc">Bright and airy Scandinavian-inspired living room with light oak flooring.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Light Oak</span>
+              <span class="material-tag">Cotton Rugs</span>
+              <span class="material-tag">Linen Sofa</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="living">
+          <div class="detail-card-img" style="background-image:url('./components/livingroom/img5.jpeg'),url('https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Luxury Formal Living</h3>
+            <p class="detail-location">Living Room · Coimbatore</p>
+            <p class="detail-desc">A formal living room with a marble feature wall and luxurious seating.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Statuario Marble</span>
+              <span class="material-tag">Silk Blend</span>
+              <span class="material-tag">Crystal Chandelier</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7 KITCHEN -->
+        <article class="detail-card" data-category="kitchen">
+          <div class="detail-card-img kitchen-img-1"></div>
+          <div class="detail-card-body">
+            <h3>Modular Kitchen — Sage Green</h3>
+            <p class="detail-location">Kitchen · Coimbatore</p>
+            <p class="detail-desc">A modern L-shaped kitchen with soft-close drawers and quartz countertops.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Quartz Countertop</span>
+              <span class="material-tag">BWP Plywood</span>
+              <span class="material-tag">Acrylic Finish</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="kitchen">
+          <div class="detail-card-img kitchen-img-2"></div>
+          <div class="detail-card-body">
+            <h3>Island Kitchen — Urban Loft</h3>
+            <p class="detail-location">Kitchen · Coimbatore</p>
+            <p class="detail-desc">A compact island kitchen with smart storage and under-cabinet lighting.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Granite Top</span>
+              <span class="material-tag">HDHMR Board</span>
+              <span class="material-tag">LED Profile</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="kitchen">
+          <div class="detail-card-img kitchen-img-3"></div>
+          <div class="detail-card-body">
+            <h3>Parallel Kitchen — Warm Walnut</h3>
+            <p class="detail-location">Kitchen · Coimbatore</p>
+            <p class="detail-desc">A parallel kitchen layout with walnut-finish shutters and dedicated tall units.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Walnut Laminate</span>
+              <span class="material-tag">Granite Counter</span>
+              <span class="material-tag">Soft-close Hinges</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="kitchen">
+          <div class="detail-card-img kitchen-img-4"></div>
+          <div class="detail-card-body">
+            <h3>U-Shaped Kitchen — Chef's Choice</h3>
+            <p class="detail-location">Kitchen · Coimbatore</p>
+            <p class="detail-desc">A spacious U-shaped kitchen with dedicated zones for prep and cooking.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Marine Plywood</span>
+              <span class="material-tag">Quartz Top</span>
+              <span class="material-tag">Acrylic Shutters</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="kitchen">
+          <div class="detail-card-img kitchen-img-5"></div>
+          <div class="detail-card-body">
+            <h3>White & Wood Kitchen</h3>
+            <p class="detail-location">Kitchen · Coimbatore</p>
+            <p class="detail-desc">White upper cabinets with warm wood lower units and open shelving.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">White Laminate</span>
+              <span class="material-tag">Oak Veneer</span>
+              <span class="material-tag">Brass Hardware</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="kitchen">
+          <div class="detail-card-img kitchen-img-6"></div>
+          <div class="detail-card-body">
+            <h3>Compact Kitchen — City Apartment</h3>
+            <p class="detail-location">Kitchen · Coimbatore</p>
+            <p class="detail-desc">A space-efficient kitchen with clever storage and pull-out racks.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Compact Laminate</span>
+              <span class="material-tag">Granite Top</span>
+              <span class="material-tag">Pull-out Racks</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="kitchen">
+          <div class="detail-card-img kitchen-img-7"></div>
+          <div class="detail-card-body">
+            <h3>Modern Kitchen — Matte Black</h3>
+            <p class="detail-location">Kitchen · Coimbatore</p>
+            <p class="detail-desc">A statement kitchen with matte black shutters and gold accents.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Matte Black Laminate</span>
+              <span class="material-tag">Black Quartz</span>
+              <span class="material-tag">Gold Handles</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7 BEDROOM -->
+        <article class="detail-card" data-category="bedroom">
+          <div class="detail-card-img" style="background-image:url('./components/bedroom/img1.jpeg'),url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Master Bedroom — Natural Harmony</h3>
+            <p class="detail-location">Bedroom · Coimbatore</p>
+            <p class="detail-desc">A calm master bedroom with a walk-in wardrobe and layered lighting.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Oak Veneer</span>
+              <span class="material-tag">Cotton Duvet</span>
+              <span class="material-tag">Warm LED</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="bedroom">
+          <div class="detail-card-img" style="background-image:url('./components/bedroom/img2.jpeg'),url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Kids Bedroom — Playful Pastels</h3>
+            <p class="detail-location">Bedroom · Coimbatore</p>
+            <p class="detail-desc">A bright kids' bedroom with built-in study and plenty of storage.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Low-VOC Paint</span>
+              <span class="material-tag">Plywood</span>
+              <span class="material-tag">Anti-skid Vinyl</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="bedroom">
+          <div class="detail-card-img" style="background-image:url('./components/bedroom/img3.jpeg'),url('https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Guest Bedroom — Soft Neutrals</h3>
+            <p class="detail-location">Bedroom · Coimbatore</p>
+            <p class="detail-desc">A welcoming guest bedroom with plush upholstered bed and work nook.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Upholstered Headboard</span>
+              <span class="material-tag">Linen Bedding</span>
+              <span class="material-tag">Engineered Wood</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="bedroom">
+          <div class="detail-card-img" style="background-image:url('./components/bedroom/img4.jpeg'),url('https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Teen Bedroom — Study & Style</h3>
+            <p class="detail-location">Bedroom · Coimbatore</p>
+            <p class="detail-desc">A teen bedroom with a study zone and loft bed.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Loft Bed Frame</span>
+              <span class="material-tag">Chalkboard Paint</span>
+              <span class="material-tag">Study Desk</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="bedroom">
+          <div class="detail-card-img" style="background-image:url('./components/bedroom/img5.jpeg'),url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Luxury Master Suite</h3>
+            <p class="detail-location">Bedroom · Coimbatore</p>
+            <p class="detail-desc">An expansive master suite with seating area and walk-in closet.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Italian Marble</span>
+              <span class="material-tag">Velvet Upholstery</span>
+              <span class="material-tag">Brushed Brass</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="bedroom">
+          <div class="detail-card-img" style="background-image:url('./components/bedroom/img6.jpeg'),url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Minimalist Bedroom</h3>
+            <p class="detail-location">Bedroom · Coimbatore</p>
+            <p class="detail-desc">A pared-back bedroom with floating bedside tables and hidden storage.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Matte Laminate</span>
+              <span class="material-tag">Micro-cement</span>
+              <span class="material-tag">Oak Flooring</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="bedroom">
+          <div class="detail-card-img" style="background-image:url('./components/bedroom/img7.jpeg'),url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Rustic Bedroom — Earthy Charm</h3>
+            <p class="detail-location">Bedroom · Coimbatore</p>
+            <p class="detail-desc">A rustic bedroom with exposed wood beams and warm textiles.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Reclaimed Wood</span>
+              <span class="material-tag">Wool Throw</span>
+              <span class="material-tag">Terracotta Tiles</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- OFFICE -->
+        <article class="detail-card" data-category="office">
+          <div class="detail-card-img" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Corporate Office — Tech Park</h3>
+            <p class="detail-location">Office · Coimbatore</p>
+            <p class="detail-desc">A 2500 sq.ft. office with collaborative zones and acoustic panels.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Gypsum Ceiling</span>
+              <span class="material-tag">Vinyl Flooring</span>
+              <span class="material-tag">Glass Partitions</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-card" data-category="office">
+          <div class="detail-card-img" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=85')"></div>
+          <div class="detail-card-body">
+            <h3>Boutique Office — Creative Studio</h3>
+            <p class="detail-location">Office · Coimbatore</p>
+            <p class="detail-desc">A compact creative studio with open shelving and collaborative layout.</p>
+            <p class="materials-label">Materials Used</p>
+            <div class="materials-list">
+              <span class="material-tag">Pine Wood</span>
+              <span class="material-tag">Industrial Pipes</span>
+              <span class="material-tag">Concrete Finish</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <section class="reviews-section">
+      <div class="container">
+        <div class="reviews-header">
+          <div class="section-title">
+            <div class="eyebrow">Client feedback</div>
+            <h2>Reviews & Ratings</h2>
+          </div>
+          <div class="avg-rating-display">
+            <div class="avg-number" id="avgNumber">4.8</div>
+            <div>
+              <div class="avg-stars" id="avgStars">★★★★★</div>
+              <div class="avg-count" id="avgCount">Based on reviews</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-grid" id="reviewsGrid"></div>
+
+        <div class="write-review">
+          <h3>Share Your Experience</h3>
+          <p class="sub">Your review will appear on this page and help others make an informed decision.</p>
+          <form class="review-form" id="reviewForm">
+            <input class="full" name="name" id="reviewName" placeholder="Your name *" required>
+            <select class="full" name="project" id="reviewProject" required>
+              <option value="">Select project type *</option>
+              <option>Living Room</option>
+              <option>Kitchen</option>
+              <option>Bedroom</option>
+              <option>Office</option>
+              <option>Full Home</option>
+            </select>
+            <div class="full star-picker" id="starPicker">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+              <span class="star-picker-label" id="starLabel">Tap to rate</span>
+            </div>
+            <textarea class="full" name="text" id="reviewText" placeholder="Write your review… *" required></textarea>
+            <button class="btn full" type="submit">SUBMIT REVIEW</button>
+          </form>
+          <div class="review-success" id="reviewSuccess">✓ Thank you! Your review has been published.</div>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align:center;padding-bottom:80px;">
+      <a class="btn" onclick="showMainPage();return false;">← Back to Home</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-brand">DREAM CATCHER · INTERIOR DESIGNS</span>
+    <span>© <span id="year"></span> Dream Catcher. All rights reserved.</span>
+    <a class="instagram-link" href="https://www.instagram.com/dreamcatcherinteriors" target="_blank" rel="noopener noreferrer">
+      <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+    <a onclick="showMainPage();return false;" href="#" style="cursor:pointer">Back to top ↑</a>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/916369018939?text=Hello%20Dream%20Catcher%20Interior%20Designs%2C%20I%27d%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">◉</a>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+menuToggle.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.textContent = open ? '✕ Close' : '☰ Menu';
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded','false');
+  menuToggle.textContent = '☰ Menu';
+}));
+
+const serviceData = {
+  residential: {
+    title: 'Residential Interiors',
+    desc: 'Explore our completed residential projects across living rooms, bedrooms and more — with material details and client reviews.'
+  },
+  kitchen: {
+    title: 'Modular Kitchens',
+    desc: 'Discover our modular kitchen designs with smart storage, premium materials and honest client feedback.'
+  },
+  commercial: {
+    title: 'Commercial Interiors',
+    desc: 'See our commercial projects — offices, retail and workspaces — with materials used and client reviews.'
+  }
+};
+
+function showMainPage() {
+  document.getElementById('mainPage').style.display = 'block';
+  document.getElementById('servicePage').classList.remove('active');
+  document.getElementById('servicePage').style.display = 'none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function showServicePage(type) {
+  const data = serviceData[type] || serviceData.residential;
+  document.getElementById('servicePageTitle').textContent = data.title;
+  document.getElementById('servicePageDesc').textContent = data.desc;
+
+  // Apply the service filter on entry
+  applyServiceFilter(type);
+
+  // Reset category tabs to "All"
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('.cat-tab').classList.add('active');
+
+  document.getElementById('mainPage').style.display = 'none';
+  document.getElementById('servicePage').classList.add('active');
+  document.getElementById('servicePage').style.display = 'block';
+
+  renderReviews();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* =====================================================
+   FILTERING
+   - showServicePage('kitchen') applies service filter:
+     only kitchen cards shown initially
+   - Clicking category tabs then shows all projects of
+     that category (independent of service type)
+   ===================================================== */
+let currentServiceType = 'residential';
+
+function applyServiceFilter(type) {
+  currentServiceType = type;
+  const cards = document.querySelectorAll('#projectDetailGrid .detail-card');
+  cards.forEach(card => {
+    const cat = card.dataset.category;
+    let show = true;
+    if (type === 'residential') {
+      show = (cat === 'living' || cat === 'bedroom');
+    } else if (type === 'kitchen') {
+      show = (cat === 'kitchen');
+    } else if (type === 'commercial') {
+      show = (cat === 'office');
+    }
+    card.style.display = show ? 'block' : 'none';
+  });
+}
+
+/* FIXED: Category tab clicks now show ALL projects of that category,
+   regardless of which service page you entered from. */
+function filterProjects(category, btn) {
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+
+  const cards = document.querySelectorAll('#projectDetailGrid .detail-card');
+  cards.forEach(card => {
+    const cat = card.dataset.category;
+    if (category === 'all') {
+      // "All Projects" — show all cards in the grid
+      card.style.display = 'block';
+    } else {
+      // Category tabs (living / kitchen / bedroom / office) — show matching
+      card.style.display = (cat === category) ? 'block' : 'none';
+    }
+  });
+}
+
+/* ==================== REVIEWS ==================== */
+const STORAGE_KEY = 'dreamcatcher_reviews_v5';
+
+const seedReviews = [
+  { id:'seed1', name:'Aarthi R.', project:'Living Room', rating:5, text:'Dream Catcher transformed our 3BHK into a warm, functional home. The team was professional, and the material quality is excellent. Highly recommend!', date:'March 2025' },
+  { id:'seed2', name:'Karthik S.', project:'Kitchen', rating:5, text:'Our modular kitchen is both beautiful and practical. The soft-close drawers and quartz countertop were worth every rupee. Great attention to detail.', date:'February 2025' },
+  { id:'seed3', name:'Priya M.', project:'Office', rating:4, text:'The office interiors have impressed our clients and improved team productivity. The biophilic design and acoustic panels are a game-changer.', date:'January 2025' },
+  { id:'seed4', name:'Suresh V.', project:'Bedroom', rating:5, text:'The master bedroom feels like a boutique hotel. The custom headboard and walk-in wardrobe are stunning. Thank you, Dream Catcher!', date:'December 2024' },
+  { id:'seed5', name:'Meera N.', project:'Living Room', rating:5, text:'Elegant, warm and extremely well planned. The team listened to every requirement and delivered beyond expectations.', date:'November 2024' },
+  { id:'seed6', name:'Rahul T.', project:'Kitchen', rating:4, text:'Very happy with the kitchen layout and finish. The pull-out pantry is a lifesaver.', date:'October 2024' },
+  { id:'seed7', name:'Anitha J.', project:'Bedroom', rating:5, text:'Our kids bedroom is safe, spacious and beautiful. Storage was thoughtfully designed.', date:'September 2024' },
+  { id:'seed8', name:'Vignesh K.', project:'Kitchen', rating:5, text:'The U-shaped kitchen is a dream to cook in. Great use of space and the quartz top is stunning.', date:'August 2024' }
+];
+
+function loadReviews() {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) return JSON.parse(stored);
+  } catch(e) {}
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(seedReviews));
+  return seedReviews;
+}
+function saveReviews(reviews) { localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews)); }
+
+function renderReviews() {
+  const reviews = loadReviews();
+  const grid = document.getElementById('reviewsGrid');
+  if (!reviews || reviews.length === 0) {
+    grid.innerHTML = '<div class="no-reviews">No reviews yet. Be the first to share your experience!</div>';
+    updateAverage([]);
+    return;
+  }
+  const sorted = [...reviews].reverse();
+  grid.innerHTML = sorted.map(r => {
+    const initial = (r.name || '?').charAt(0).toUpperCase();
+    const stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+    return `
+      <div class="review-card">
+        <div class="review-stars">${stars}</div>
+        <p class="review-text">"${escapeHtml(r.text)}"</p>
+        <div class="review-author">
+          <div class="review-avatar">${initial}</div>
+          <div>
+            <div class="review-name">${escapeHtml(r.name)}</div>
+            <div class="review-project">${escapeHtml(r.project)} · Coimbatore</div>
+            <div class="review-date">${escapeHtml(r.date || '')}</div>
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+  updateAverage(reviews);
+}
+
+function updateAverage(reviews) {
+  const numEl = document.getElementById('avgNumber');
+  const starsEl = document.getElementById('avgStars');
+  const countEl = document.getElementById('avgCount');
+  if (!reviews || reviews.length === 0) {
+    numEl.textContent = '—'; starsEl.textContent = '☆☆☆☆☆'; countEl.textContent = 'No reviews yet';
+    return;
+  }
+  const avg = reviews.reduce((s, r) => s + Number(r.rating), 0) / reviews.length;
+  const rounded = Math.round(avg * 10) / 10;
+  numEl.textContent = rounded.toFixed(1);
+  const fullStars = Math.round(avg);
+  starsEl.textContent = '★'.repeat(fullStars) + '☆'.repeat(5 - fullStars);
+  countEl.textContent = `Based on ${reviews.length} review${reviews.length > 1 ? 's' : ''}`;
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+}
+
+let selectedRating = 0;
+const stars = document.querySelectorAll('#starPicker .star');
+const starLabel = document.getElementById('starLabel');
+
+stars.forEach(star => {
+  star.addEventListener('mouseenter', () => {
+    const val = Number(star.dataset.value);
+    stars.forEach(s => { s.style.color = Number(s.dataset.value) <= val ? '#f5b342' : '#d9dfd4'; });
+    starLabel.textContent = val === 1 ? '1 star' : val + ' stars';
+  });
+  star.addEventListener('mouseleave', () => {
+    stars.forEach(s => {
+      s.style.color = Number(s.dataset.value) <= selectedRating ? '#f5b342' : '#d9dfd4';
+      s.classList.toggle('active', Number(s.dataset.value) <= selectedRating);
+    });
+    if (selectedRating === 0) starLabel.textContent = 'Tap to rate';
+    else starLabel.textContent = selectedRating === 1 ? '1 star' : selectedRating + ' stars';
+  });
+  star.addEventListener('click', () => {
+    selectedRating = Number(star.dataset.value);
+    stars.forEach(s => {
+      s.classList.toggle('active', Number(s.dataset.value) <= selectedRating);
+      s.style.color = Number(s.dataset.value) <= selectedRating ? '#f5b342' : '#d9dfd4';
+    });
+    starLabel.textContent = selectedRating === 1 ? '1 star' : selectedRating + ' stars';
+  });
+});
+
+document.getElementById('reviewForm').addEventListener('submit', e => {
+  e.preventDefault();
+  if (selectedRating === 0) {
+    starLabel.textContent = 'Please select a rating ★';
+    starLabel.style.color = '#c0392b';
+    setTimeout(() => { starLabel.style.color = ''; }, 2500);
+    return;
+  }
+  const name = document.getElementById('reviewName').value.trim();
+  const project = document.getElementById('reviewProject').value;
+  const text = document.getElementById('reviewText').value.trim();
+  if (!name || !project || !text) return;
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-IN', { month: 'long', year: 'numeric' });
+  const newReview = { id: 'r' + Date.now(), name, project, rating: selectedRating, text, date: dateStr };
+  const reviews = loadReviews();
+  reviews.push(newReview);
+  saveReviews(reviews);
+  e.target.reset();
+  selectedRating = 0;
+  stars.forEach(s => { s.classList.remove('active'); s.style.color = '#d9dfd4'; });
+  starLabel.textContent = 'Tap to rate';
+  starLabel.style.color = '';
+  const successEl = document.getElementById('reviewSuccess');
+  successEl.classList.add('show');
+  setTimeout(() => successEl.classList.remove('show'), 4000);
+  renderReviews();
+});
+
+document.getElementById('enquiryForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const d = new FormData(e.currentTarget);
+  const phone = String(d.get('phone')).trim();
+  if (phone.replace(/\D/g,'').length < 10) {
+    document.getElementById('formMessage').textContent = 'Please enter a valid phone number (at least 10 digits).';
+    return;
+  }
+  const msg = 'Hello Dream Catcher Interior Designs! I would like to enquire about an interior design project.\n\n' +
+    'Name: ' + d.get('name') + '\n' +
+    'Phone: ' + phone + '\n' +
+    'Email: ' + (d.get('email') || 'Not provided') + '\n' +
+    'Location: ' + d.get('location') + '\n' +
+    'Budget: ' + d.get('budget') + '\n' +
+    'Service: ' + d.get('project') + '\n' +
+    'Project details: ' + (d.get('message') || 'Not provided') + '\n\n' +
+    'Please contact me to discuss the next steps.';
+  document.getElementById('formMessage').textContent = 'Opening WhatsApp with your enquiry. Please review and press Send.';
+  window.open('https://wa.me/916369018939?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+});
+
+renderReviews();
+</script>
+</body>
+</html>
