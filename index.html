@@ -45,14 +45,11 @@ header{
 .nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;align-items:center;gap:14px;cursor:pointer}
 
-/* ============ VASTARA LOGO IMAGE ============ */
 .logo-mark{
-  width:80px;height:80px;flex-shrink:0;
+  width:64px;height:64px;flex-shrink:0;
   display:block;object-fit:contain;
 }
-.brand-text{
-  display:flex;flex-direction:column;
-}
+.brand-text{display:flex;flex-direction:column;}
 .brand-title{
   font-family:var(--font-serif);font-size:1.55rem;
   letter-spacing:0.08em;line-height:1;font-weight:600;
@@ -67,7 +64,6 @@ header{
   font-family:var(--font-serif);font-style:italic;
   font-size:0.78rem;color:var(--muted);margin-top:3px;
 }
-/* ========================================== */
 
 .navlinks{display:flex;align-items:center;gap:clamp(14px,2.5vw,38px)}
 .navlinks a{font-size:0.94rem;font-weight:500;position:relative;padding:8px 0;transition:color 0.2s;cursor:pointer}
@@ -540,7 +536,7 @@ footer{padding:32px 0;background:#18231d;color:#cfd6cb;font-size:0.86rem;border-
 
 <header>
   <div class="container nav">
-    <a class="brand" onclick="showMainPage();return false;">
+    <a class="brand" href="#home" onclick="goToSection('home', this); return false;">
       <img src="./components/logo.jpeg" alt="Vastara Interior Designers" class="logo-mark">
       <span class="brand-text">
         <span class="brand-title">VASTARA</span>
@@ -550,16 +546,16 @@ footer{padding:32px 0;background:#18231d;color:#cfd6cb;font-size:0.86rem;border-
     </a>
     <button class="menu-toggle" id="menuToggle" aria-expanded="false">☰ Menu</button>
     <nav class="navlinks" id="navLinks">
-      <a class="active" onclick="showMainPage();return false;">Home</a>
-      <a onclick="showMainPage();return false;">About</a>
-      <a onclick="showMainPage();return false;">Services</a>
-      <a onclick="showMainPage();return false;">Portfolio</a>
-      <a onclick="showMainPage();return false;">Contact</a>
+      <a class="active" href="#home" onclick="goToSection('home', this); return false;">Home</a>
+      <a href="#about" onclick="goToSection('about', this); return false;">About</a>
+      <a href="#services" onclick="goToSection('services', this); return false;">Services</a>
+      <a href="#portfolio" onclick="goToSection('portfolio', this); return false;">Portfolio</a>
+      <a href="#contact" onclick="goToSection('contact', this); return false;">Contact</a>
       <a class="instagram-link" href="https://www.instagram.com/vastarainteriors" target="_blank" rel="noopener noreferrer">
         <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         <span>Instagram</span>
       </a>
-      <a class="nav-cta" onclick="showMainPage();return false;">Free quote ↗</a>
+      <a class="nav-cta" href="#contact" onclick="goToSection('contact', this); return false;">Free quote ↗</a>
     </nav>
   </div>
 </header>
@@ -572,7 +568,7 @@ footer{padding:32px 0;background:#18231d;color:#cfd6cb;font-size:0.86rem;border-
         <h1>Spaces That Feel <em>Like Home</em></h1>
         <p>Thoughtfully designed interiors. Beautifully executed.</p>
         <div class="actions">
-          <a class="btn" href="#contact">GET A FREE QUOTE <span>→</span></a>
+          <a class="btn" href="#contact" onclick="goToSection('contact', this); return false;">GET A FREE QUOTE <span>→</span></a>
           <a class="btn secondary" href="tel:+917338812718">☎ &nbsp; CALL NOW</a>
         </div>
       </div>
@@ -626,7 +622,7 @@ footer{padding:32px 0;background:#18231d;color:#cfd6cb;font-size:0.86rem;border-
       <span class="cta-spark">✧</span>
       <h2>Let's bring your vision to life!</h2>
       <p>Get expert advice and a customised design plan for your space.</p>
-      <a class="btn" href="#contact">GET A FREE QUOTE <span>→</span></a>
+      <a class="btn" href="#contact" onclick="goToSection('contact', this); return false;">GET A FREE QUOTE <span>→</span></a>
       <a class="btn secondary" href="https://www.instagram.com/vastarainteriors" target="_blank" rel="noopener noreferrer">
         <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         Follow Us on Instagram
@@ -666,7 +662,7 @@ footer{padding:32px 0;background:#18231d;color:#cfd6cb;font-size:0.86rem;border-
             <li>Practical planning with considered details</li>
             <li>Design, execution and turnkey solutions</li>
           </ul>
-          <a class="btn" href="#contact">LET'S DISCUSS YOUR SPACE →</a>
+          <a class="btn" href="#contact" onclick="goToSection('contact', this); return false;">LET'S DISCUSS YOUR SPACE →</a>
         </div>
       </div>
     </section>
@@ -1122,7 +1118,7 @@ footer{padding:32px 0;background:#18231d;color:#cfd6cb;font-size:0.86rem;border-
       <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
       Instagram
     </a>
-    <a onclick="showMainPage();return false;" href="#" style="cursor:pointer">Back to top ↑</a>
+    <a href="#home" onclick="goToSection('home', this); return false;" style="cursor:pointer">Back to top ↑</a>
   </div>
 </footer>
 
@@ -1131,6 +1127,7 @@ footer{padding:32px 0;background:#18231d;color:#cfd6cb;font-size:0.86rem;border-
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 
+/* ==================== MOBILE MENU ==================== */
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 menuToggle.addEventListener('click', () => {
@@ -1138,12 +1135,8 @@ menuToggle.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded', String(open));
   menuToggle.textContent = open ? '✕ Close' : '☰ Menu';
 });
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  navLinks.classList.remove('open');
-  menuToggle.setAttribute('aria-expanded','false');
-  menuToggle.textContent = '☰ Menu';
-}));
 
+/* ==================== SERVICE PAGE DATA ==================== */
 const serviceData = {
   residential: {
     title: 'Residential Interiors',
@@ -1159,6 +1152,7 @@ const serviceData = {
   }
 };
 
+/* ==================== PAGE NAVIGATION ==================== */
 function showMainPage() {
   document.getElementById('mainPage').style.display = 'block';
   document.getElementById('servicePage').classList.remove('active');
@@ -1184,6 +1178,52 @@ function showServicePage(type) {
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
+/* ==================== NAVIGATE TO SECTION (works from service page too) ==================== */
+function goToSection(sectionId, clickedLink) {
+  // Close mobile menu if open
+  if (navLinks && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.textContent = '☰ Menu';
+  }
+
+  // If on service page, switch back to main page first
+  const servicePage = document.getElementById('servicePage');
+  const mainPage = document.getElementById('mainPage');
+  const isOnServicePage = servicePage.classList.contains('active');
+
+  if (isOnServicePage) {
+    mainPage.style.display = 'block';
+    servicePage.classList.remove('active');
+    servicePage.style.display = 'none';
+  }
+
+  // Update active state on nav links
+  document.querySelectorAll('.navlinks a').forEach(a => a.classList.remove('active'));
+  if (clickedLink && clickedLink.classList.contains('nav-cta') === false && !clickedLink.classList.contains('instagram-link')) {
+    clickedLink.classList.add('active');
+  }
+
+  // Smooth scroll to target section
+  const scrollToTarget = () => {
+    const target = document.getElementById(sectionId);
+    if (target) {
+      const headerOffset = 100;
+      const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+  };
+
+  if (isOnServicePage) {
+    // Wait for the main page to render before scrolling
+    setTimeout(scrollToTarget, 60);
+  } else {
+    scrollToTarget();
+  }
+}
+
+/* ==================== FILTERING ==================== */
 let currentServiceType = 'residential';
 
 function applyServiceFilter(type) {
@@ -1218,6 +1258,7 @@ function filterProjects(category, btn) {
   });
 }
 
+/* ==================== REVIEWS ==================== */
 const STORAGE_KEY = 'vastara_reviews_v1';
 
 const seedReviews = [
